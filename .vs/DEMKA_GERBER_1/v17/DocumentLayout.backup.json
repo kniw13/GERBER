@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|c:\\users\\user\\desktop\\visual projects\\demka_gerber_1\\demka_gerber_1\\pages\\requestlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\pages\\requestlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\pages\\redactdeletepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\pages\\redactdeletepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\helper\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\pages\\redactdeletepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\pages\\redactdeletepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\models\\bd_demka_1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\models\\bd_demka_1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\pages\\requestlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\pages\\requestlistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\demka_gerber_1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E730E521-3C8E-431B-A9C5-D00ACF17683E}|DEMKA_GERBER_1\\DEMKA_GERBER_1.csproj|solutionrelative:demka_gerber_1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 1190,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 52,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RedactDeletePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Pages\\RedactDeletePage.xaml.cs",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\Pages\\RedactDeletePage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Pages\\RedactDeletePage.xaml.cs",
+              "RelativeToolTip": "DEMKA_GERBER_1\\Pages\\RedactDeletePage.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswEMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T21:29:55.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RedactDeletePage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Pages\\RedactDeletePage.xaml",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\Pages\\RedactDeletePage.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Pages\\RedactDeletePage.xaml",
+              "RelativeToolTip": "DEMKA_GERBER_1\\Pages\\RedactDeletePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-08T21:01:43.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "DEMKA_GERBER_1\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T08:31:58.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Helper\\Helper.cs",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\Helper\\Helper.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Helper\\Helper.cs",
+              "RelativeToolTip": "DEMKA_GERBER_1\\Helper\\Helper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T09:01:55.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\MainWindow.xaml",
+              "RelativeToolTip": "DEMKA_GERBER_1\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-07T08:32:00.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\App.xaml",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\App.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\App.xaml",
+              "RelativeToolTip": "DEMKA_GERBER_1\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-07T08:39:36.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Pages\\RequestListPage.xaml.cs",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\Pages\\RequestListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Pages\\RequestListPage.xaml.cs",
+              "RelativeToolTip": "DEMKA_GERBER_1\\Pages\\RequestListPage.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA9wCEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T21:53:18.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RequestListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Pages\\RequestListPage.xaml",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\Pages\\RequestListPage.xaml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\Pages\\RequestListPage.xaml",
+              "RelativeToolTip": "DEMKA_GERBER_1\\Pages\\RequestListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-08T21:51:12.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\packages.config",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\packages.config",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\packages.config",
+              "RelativeToolTip": "DEMKA_GERBER_1\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-09-08T22:11:43.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BD_DEMKA_1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\MODELS\\BD_DEMKA_1.edmx",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\MODELS\\BD_DEMKA_1.edmx",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\MODELS\\BD_DEMKA_1.edmx [Diagram1]",
+              "RelativeToolTip": "DEMKA_GERBER_1\\MODELS\\BD_DEMKA_1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-09-08T21:05:16.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\App.config",
+              "RelativeDocumentMoniker": "DEMKA_GERBER_1\\App.config",
+              "ToolTip": "C:\\Users\\user\\Desktop\\visual projects\\DEMKA_GERBER_1\\DEMKA_GERBER_1\\App.config",
+              "RelativeToolTip": "DEMKA_GERBER_1\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAADvAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-09-07T08:39:39.874Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

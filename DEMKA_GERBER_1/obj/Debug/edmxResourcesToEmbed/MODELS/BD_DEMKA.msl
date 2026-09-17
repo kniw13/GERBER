@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PODGOTOVKA_DEM_EKZAMEN_MDK_04_01ModelContainer" CdmEntityContainer="DEMKA_GERBER">
+    <EntitySetMapping Name="Access_level_type">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_level_type">
+        <MappingFragment StoreEntitySet="Access_level_type">
+          <ScalarProperty Name="Access_type_id" ColumnName="Access_type_id" />
+          <ScalarProperty Name="Type_name" ColumnName="Type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Access_log">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_log">
+        <MappingFragment StoreEntitySet="Access_log">
+          <ScalarProperty Name="Log_ID" ColumnName="Log_ID" />
+          <ScalarProperty Name="Sotrudnik_ID" ColumnName="Sotrudnik_ID" />
+          <ScalarProperty Name="Point_ID" ColumnName="Point_ID" />
+          <ScalarProperty Name="Card_Number" ColumnName="Card_Number" />
+          <ScalarProperty Name="Direction_ID" ColumnName="Direction_ID" />
+          <ScalarProperty Name="Access_Time" ColumnName="Access_Time" />
+          <ScalarProperty Name="Access_Result_id" ColumnName="Access_Result_id" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="Session_Device" ColumnName="Session_Device" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Access_point_type">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_point_type">
+        <MappingFragment StoreEntitySet="Access_point_type">
+          <ScalarProperty Name="Type_id" ColumnName="Type_id" />
+          <ScalarProperty Name="Type_name" ColumnName="Type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Access_points">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_points">
+        <MappingFragment StoreEntitySet="Access_points">
+          <ScalarProperty Name="Point_ID" ColumnName="Point_ID" />
+          <ScalarProperty Name="Point_Name" ColumnName="Point_Name" />
+          <ScalarProperty Name="Point_Type_id" ColumnName="Point_Type_id" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Access_results">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_results">
+        <MappingFragment StoreEntitySet="Access_results">
+          <ScalarProperty Name="Result_id" ColumnName="Result_id" />
+          <ScalarProperty Name="Result_name" ColumnName="Result_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Direction">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Direction">
+        <MappingFragment StoreEntitySet="Direction">
+          <ScalarProperty Name="Direction_id" ColumnName="Direction_id" />
+          <ScalarProperty Name="Direction_name" ColumnName="Direction_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Edeniza_Izmerenia">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Edeniza_Izmerenia">
+        <MappingFragment StoreEntitySet="Edeniza_Izmerenia">
+          <ScalarProperty Name="Edeniza_id" ColumnName="Edeniza_id" />
+          <ScalarProperty Name="edeniza_name" ColumnName="edeniza_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipment">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Equipment">
+        <MappingFragment StoreEntitySet="Equipment">
+          <ScalarProperty Name="Equipment_ID" ColumnName="Equipment_ID" />
+          <ScalarProperty Name="Equipment_Name" ColumnName="Equipment_Name" />
+          <ScalarProperty Name="Equipment_Type_id" ColumnName="Equipment_Type_id" />
+          <ScalarProperty Name="Workshop_Number" ColumnName="Workshop_Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipment_type">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Equipment_type">
+        <MappingFragment StoreEntitySet="Equipment_type">
+          <ScalarProperty Name="Type_id" ColumnName="Type_id" />
+          <ScalarProperty Name="Type_name" ColumnName="Type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Family_status">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Family_status">
+        <MappingFragment StoreEntitySet="Family_status">
+          <ScalarProperty Name="Status_Id" ColumnName="Status_Id" />
+          <ScalarProperty Name="Status_Name" ColumnName="Status_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gender">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="Gender_id" ColumnName="Gender_id" />
+          <ScalarProperty Name="Gender_name" ColumnName="Gender_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material_types">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Material_types">
+        <MappingFragment StoreEntitySet="Material_types">
+          <ScalarProperty Name="Material_type_id" ColumnName="Material_type_id" />
+          <ScalarProperty Name="Material_type_name" ColumnName="Material_type_name" />
+          <ScalarProperty Name="Material_BRAK_Procent" ColumnName="Material_BRAK_Procent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Materials">
+        <MappingFragment StoreEntitySet="Materials">
+          <ScalarProperty Name="Material_id" ColumnName="Material_id" />
+          <ScalarProperty Name="Material_name" ColumnName="Material_name" />
+          <ScalarProperty Name="Material_type_id" ColumnName="Material_type_id" />
+          <ScalarProperty Name="Postavshik_id" ColumnName="Postavshik_id" />
+          <ScalarProperty Name="Kolichestvo" ColumnName="Kolichestvo" />
+          <ScalarProperty Name="Edeniza_izmerenya_Id" ColumnName="Edeniza_izmerenya_Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Kolichestvo_On_Sklad" ColumnName="Kolichestvo_On_Sklad" />
+          <ScalarProperty Name="Min_ammount" ColumnName="Min_ammount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oblast">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Oblast">
+        <MappingFragment StoreEntitySet="Oblast">
+          <ScalarProperty Name="Oblast_ID" ColumnName="Oblast_ID" />
+          <ScalarProperty Name="Oblast_Name" ColumnName="Oblast_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partner_type">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Partner_type">
+        <MappingFragment StoreEntitySet="Partner_type">
+          <ScalarProperty Name="Partner_Type_ID" ColumnName="Partner_Type_ID" />
+          <ScalarProperty Name="Partner_Type_Name" ColumnName="Partner_Type_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partners">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Partners">
+        <MappingFragment StoreEntitySet="Partners">
+          <ScalarProperty Name="Partner_ID" ColumnName="Partner_ID" />
+          <ScalarProperty Name="Partner_Name" ColumnName="Partner_Name" />
+          <ScalarProperty Name="Partner_Type_id" ColumnName="Partner_Type_id" />
+          <ScalarProperty Name="Partner_dir_familiya" ColumnName="Partner_dir_familiya" />
+          <ScalarProperty Name="Partner_dir_name" ColumnName="Partner_dir_name" />
+          <ScalarProperty Name="Partner_dir_otch" ColumnName="Partner_dir_otch" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="Post_Index" ColumnName="Post_Index" />
+          <ScalarProperty Name="Oblast_ID" ColumnName="Oblast_ID" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="logotype" ColumnName="logotype" />
+          <ScalarProperty Name="Sale_place_id" ColumnName="Sale_place_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Postavshik">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Postavshik">
+        <MappingFragment StoreEntitySet="Postavshik">
+          <ScalarProperty Name="Postavshik_id" ColumnName="Postavshik_id" />
+          <ScalarProperty Name="Postavshik_name" ColumnName="Postavshik_name" />
+          <ScalarProperty Name="Postavshik_type_Id" ColumnName="Postavshik_type_Id" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Postavshik_type">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Postavshik_type">
+        <MappingFragment StoreEntitySet="Postavshik_type">
+          <ScalarProperty Name="Type_id" ColumnName="Type_id" />
+          <ScalarProperty Name="Type_Name" ColumnName="Type_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_request">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Product_request">
+        <MappingFragment StoreEntitySet="Product_request">
+          <ScalarProperty Name="Request_Id" ColumnName="Request_Id" />
+          <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+          <ScalarProperty Name="Partner_id" ColumnName="Partner_id" />
+          <ScalarProperty Name="Request_Ammount" ColumnName="Request_Ammount" />
+          <ScalarProperty Name="Date_of_request" ColumnName="Date_of_request" />
+          <ScalarProperty Name="Request_status_id" ColumnName="Request_status_id" />
+          <ScalarProperty Name="Price_For_edeniza" ColumnName="Price_For_edeniza" />
+          <ScalarProperty Name="Srok_Izgotovlenia" ColumnName="Srok_Izgotovlenia" />
+          <ScalarProperty Name="PredOplata_ammount" ColumnName="PredOplata_ammount" />
+          <ScalarProperty Name="Date_of_deliver" ColumnName="Date_of_deliver" />
+          <ScalarProperty Name="Sotrudnik_prinyal_id" ColumnName="Sotrudnik_prinyal_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_types">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Product_types">
+        <MappingFragment StoreEntitySet="Product_types">
+          <ScalarProperty Name="Produtc_Type_id" ColumnName="Produtc_Type_id" />
+          <ScalarProperty Name="Product_Type_Name" ColumnName="Product_Type_Name" />
+          <ScalarProperty Name="Product_Type_Koeficient" ColumnName="Product_Type_Koeficient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Product_id" ColumnName="Product_id" />
+          <ScalarProperty Name="Prouct_name" ColumnName="Prouct_name" />
+          <ScalarProperty Name="Product_TypeID" ColumnName="Product_TypeID" />
+          <ScalarProperty Name="Product_Article" ColumnName="Product_Article" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Product_min_price" ColumnName="Product_min_price" />
+          <ScalarProperty Name="Razmer" ColumnName="Razmer" />
+          <ScalarProperty Name="Weight_without_upakovka" ColumnName="Weight_without_upakovka" />
+          <ScalarProperty Name="Weight_with_upakovka" ColumnName="Weight_with_upakovka" />
+          <ScalarProperty Name="Edeniza_izm_id" ColumnName="Edeniza_izm_id" />
+          <ScalarProperty Name="Aprovement_Certificate" ColumnName="Aprovement_Certificate" />
+          <ScalarProperty Name="Standart_number" ColumnName="Standart_number" />
+          <ScalarProperty Name="Date_of_made" ColumnName="Date_of_made" />
+          <ScalarProperty Name="cost_price" ColumnName="cost_price" />
+          <ScalarProperty Name="Zeh_number" ColumnName="Zeh_number" />
+          <ScalarProperty Name="Kolichestvo_chelovek" ColumnName="Kolichestvo_chelovek" />
+          <ScalarProperty Name="Materials_id" ColumnName="Materials_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Qualification_Status">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Qualification_Status">
+        <MappingFragment StoreEntitySet="Qualification_Status">
+          <ScalarProperty Name="Qualification_Status1" ColumnName="Qualification_Status" />
+          <ScalarProperty Name="Status_name" ColumnName="Status_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Request_status">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Request_status">
+        <MappingFragment StoreEntitySet="Request_status">
+          <ScalarProperty Name="Status_id" ColumnName="Status_id" />
+          <ScalarProperty Name="Status_name" ColumnName="Status_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sale_place">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Sale_place">
+        <MappingFragment StoreEntitySet="Sale_place">
+          <ScalarProperty Name="Place_id" ColumnName="Place_id" />
+          <ScalarProperty Name="Place_name" ColumnName="Place_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudnik_qualification">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Sotrudnik_qualification">
+        <MappingFragment StoreEntitySet="Sotrudnik_qualification">
+          <ScalarProperty Name="Qualification_ID" ColumnName="Qualification_ID" />
+          <ScalarProperty Name="Sotrudnik_ID" ColumnName="Sotrudnik_ID" />
+          <ScalarProperty Name="Equipment_ID" ColumnName="Equipment_ID" />
+          <ScalarProperty Name="Access_Level_Type_id" ColumnName="Access_Level_Type_id" />
+          <ScalarProperty Name="Certificate_Number" ColumnName="Certificate_Number" />
+          <ScalarProperty Name="Issue_Date" ColumnName="Issue_Date" />
+          <ScalarProperty Name="Expiry_Date" ColumnName="Expiry_Date" />
+          <ScalarProperty Name="Sotrudnik_Utverdil_id" ColumnName="Sotrudnik_Utverdil_id" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Medical_Check_Date" ColumnName="Medical_Check_Date" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudnik_roles">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Sotrudnik_roles">
+        <MappingFragment StoreEntitySet="Sotrudnik_roles">
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Role_name" ColumnName="Role_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotudniki">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Sotudniki">
+        <MappingFragment StoreEntitySet="Sotudniki">
+          <ScalarProperty Name="Sotrudnik_id" ColumnName="Sotrudnik_id" />
+          <ScalarProperty Name="Sotrudnik_Familiya" ColumnName="Sotrudnik_Familiya" />
+          <ScalarProperty Name="Sotrudnik_name" ColumnName="Sotrudnik_name" />
+          <ScalarProperty Name="Sotrudnik_Otch" ColumnName="Sotrudnik_Otch" />
+          <ScalarProperty Name="Date_of_birth" ColumnName="Date_of_birth" />
+          <ScalarProperty Name="Sotrudnik_role_id" ColumnName="Sotrudnik_role_id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="Pasport" ColumnName="Pasport" />
+          <ScalarProperty Name="Bank_card" ColumnName="Bank_card" />
+          <ScalarProperty Name="Family_status_Id" ColumnName="Family_status_Id" />
+          <ScalarProperty Name="Zdorovie_Id" ColumnName="Zdorovie_Id" />
+          <ScalarProperty Name="Gender_id" ColumnName="Gender_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zdorovie">
+      <EntityTypeMapping TypeName="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Zdorovie">
+        <MappingFragment StoreEntitySet="Zdorovie">
+          <ScalarProperty Name="Zdorovie_Id" ColumnName="Zdorovie_Id" />
+          <ScalarProperty Name="Zdorovie_name" ColumnName="Zdorovie_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

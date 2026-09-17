@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c55398b37e8a462c9ab077badfbfe397" Name="Diagram1">
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_level_type" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_log" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_point_type" Width="1.5" PointX="0.75" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_points" Width="1.5" PointX="3" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Access_results" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Direction" Width="1.5" PointX="3" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Edeniza_Izmerenia" Width="1.5" PointX="3.75" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Equipment" Width="1.5" PointX="3" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Equipment_type" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Family_status" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Gender" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Material_types" Width="1.5" PointX="1.5" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Materials" Width="1.5" PointX="3.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Oblast" Width="1.5" PointX="3.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Partner_type" Width="1.5" PointX="3.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Partners" Width="1.5" PointX="6" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Postavshik" Width="1.5" PointX="1.5" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Postavshik_type" Width="1.5" PointX="1.5" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Product_request" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Product_types" Width="1.5" PointX="3.75" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Products" Width="1.5" PointX="6" PointY="36.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Qualification_Status" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Request_status" Width="1.5" PointX="6" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Sale_place" Width="1.5" PointX="3.75" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Sotrudnik_qualification" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Sotrudnik_roles" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Sotudniki" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.Zdorovie" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotrudnik_qualification_Access_level_type" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Access_log_Access_points" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Access_log_Access_results" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Access_log_Direction" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Access_log_Sotudniki" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Access_points_Access_point_type" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Materials_Edeniza_Izmerenia" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Products_Edeniza_Izmerenia" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Equipment_Equipment_type" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotrudnik_qualification_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotudniki_Family_status" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotudniki_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Materials_Material_types" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Materials_Postavshik" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Products_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Partners_Oblast" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Partners_Partner_type" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Partners_Sale_place" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Product_request_Partners" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Postavshik_Postavshik_type" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Product_request_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Product_request_Request_status" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Product_request_Sotudniki" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Products_Product_types" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotrudnik_qualification_Qualification_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotrudnik_qualification_Sotudniki" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotrudnik_qualification_Sotudniki1" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotudniki_Sotrudnik_roles" ManuallyRouted="false" />
+        <AssociationConnector Association="PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model.FK_Sotudniki_Zdorovie" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

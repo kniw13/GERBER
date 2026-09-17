@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище PODGOTOVKA_DEM_EKZAMEN_MDK_04_01Model" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Access_level_type">
+    <Key>
+      <PropertyRef Name="Access_type_id" />
+    </Key>
+    <Property Name="Access_type_id" Type="int" Nullable="false" />
+    <Property Name="Type_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Access_log">
+    <Key>
+      <PropertyRef Name="Log_ID" />
+    </Key>
+    <Property Name="Log_ID" Type="int" Nullable="false" />
+    <Property Name="Sotrudnik_ID" Type="int" />
+    <Property Name="Point_ID" Type="int" />
+    <Property Name="Card_Number" Type="int" />
+    <Property Name="Direction_ID" Type="int" />
+    <Property Name="Access_Time" Type="datetime" />
+    <Property Name="Access_Result_id" Type="int" />
+    <Property Name="Temperature" Type="nvarchar" MaxLength="255" />
+    <Property Name="Session_Device" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Access_point_type">
+    <Key>
+      <PropertyRef Name="Type_id" />
+    </Key>
+    <Property Name="Type_id" Type="int" Nullable="false" />
+    <Property Name="Type_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Access_points">
+    <Key>
+      <PropertyRef Name="Point_ID" />
+    </Key>
+    <Property Name="Point_ID" Type="int" Nullable="false" />
+    <Property Name="Point_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Point_Type_id" Type="int" />
+    <Property Name="Location" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Access_results">
+    <Key>
+      <PropertyRef Name="Result_id" />
+    </Key>
+    <Property Name="Result_id" Type="int" Nullable="false" />
+    <Property Name="Result_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Direction">
+    <Key>
+      <PropertyRef Name="Direction_id" />
+    </Key>
+    <Property Name="Direction_id" Type="int" Nullable="false" />
+    <Property Name="Direction_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Edeniza_Izmerenia">
+    <Key>
+      <PropertyRef Name="Edeniza_id" />
+    </Key>
+    <Property Name="Edeniza_id" Type="int" Nullable="false" />
+    <Property Name="edeniza_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="Equipment_ID" />
+    </Key>
+    <Property Name="Equipment_ID" Type="int" Nullable="false" />
+    <Property Name="Equipment_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Equipment_Type_id" Type="int" />
+    <Property Name="Workshop_Number" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Equipment_type">
+    <Key>
+      <PropertyRef Name="Type_id" />
+    </Key>
+    <Property Name="Type_id" Type="int" Nullable="false" />
+    <Property Name="Type_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Family_status">
+    <Key>
+      <PropertyRef Name="Status_Id" />
+    </Key>
+    <Property Name="Status_Id" Type="int" Nullable="false" />
+    <Property Name="Status_Name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="Gender_id" />
+    </Key>
+    <Property Name="Gender_id" Type="int" Nullable="false" />
+    <Property Name="Gender_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Material_types">
+    <Key>
+      <PropertyRef Name="Material_type_id" />
+    </Key>
+    <Property Name="Material_type_id" Type="int" Nullable="false" />
+    <Property Name="Material_type_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Material_BRAK_Procent" Type="float" />
+  </EntityType>
+  <EntityType Name="Materials">
+    <Key>
+      <PropertyRef Name="Material_id" />
+    </Key>
+    <Property Name="Material_id" Type="int" Nullable="false" />
+    <Property Name="Material_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Material_type_id" Type="int" />
+    <Property Name="Postavshik_id" Type="int" />
+    <Property Name="Kolichestvo" Type="int" />
+    <Property Name="Edeniza_izmerenya_Id" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Image" Type="nvarchar" MaxLength="255" />
+    <Property Name="Price" Type="nvarchar" MaxLength="255" />
+    <Property Name="Kolichestvo_On_Sklad" Type="float" />
+    <Property Name="Min_ammount" Type="float" />
+  </EntityType>
+  <EntityType Name="Oblast">
+    <Key>
+      <PropertyRef Name="Oblast_ID" />
+    </Key>
+    <Property Name="Oblast_ID" Type="int" Nullable="false" />
+    <Property Name="Oblast_Name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Partner_type">
+    <Key>
+      <PropertyRef Name="Partner_Type_ID" />
+    </Key>
+    <Property Name="Partner_Type_ID" Type="int" Nullable="false" />
+    <Property Name="Partner_Type_Name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="Partner_ID" />
+    </Key>
+    <Property Name="Partner_ID" Type="int" Nullable="false" />
+    <Property Name="Partner_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Partner_Type_id" Type="int" />
+    <Property Name="Partner_dir_familiya" Type="nvarchar" MaxLength="255" />
+    <Property Name="Partner_dir_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Partner_dir_otch" Type="nvarchar" MaxLength="255" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="phone_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="Post_Index" Type="float" />
+    <Property Name="Oblast_ID" Type="int" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="255" />
+    <Property Name="INN" Type="float" />
+    <Property Name="Rating" Type="float" />
+    <Property Name="logotype" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sale_place_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Postavshik">
+    <Key>
+      <PropertyRef Name="Postavshik_id" />
+    </Key>
+    <Property Name="Postavshik_id" Type="int" Nullable="false" />
+    <Property Name="Postavshik_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Postavshik_type_Id" Type="int" />
+    <Property Name="INN" Type="float" />
+  </EntityType>
+  <EntityType Name="Postavshik_type">
+    <Key>
+      <PropertyRef Name="Type_id" />
+    </Key>
+    <Property Name="Type_id" Type="int" Nullable="false" />
+    <Property Name="Type_Name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Product_request">
+    <Key>
+      <PropertyRef Name="Request_Id" />
+    </Key>
+    <Property Name="Request_Id" Type="int" Nullable="false" />
+    <Property Name="Product_id" Type="int" />
+    <Property Name="Partner_id" Type="int" />
+    <Property Name="Request_Ammount" Type="float" />
+    <Property Name="Date_of_request" Type="datetime" />
+    <Property Name="Request_status_id" Type="int" />
+    <Property Name="Price_For_edeniza" Type="money" />
+    <Property Name="Srok_Izgotovlenia" Type="float" />
+    <Property Name="PredOplata_ammount" Type="money" />
+    <Property Name="Date_of_deliver" Type="datetime" />
+    <Property Name="Sotrudnik_prinyal_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Product_types">
+    <Key>
+      <PropertyRef Name="Produtc_Type_id" />
+    </Key>
+    <Property Name="Produtc_Type_id" Type="int" Nullable="false" />
+    <Property Name="Product_Type_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Product_Type_Koeficient" Type="float" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Product_id" />
+    </Key>
+    <Property Name="Product_id" Type="int" Nullable="false" />
+    <Property Name="Prouct_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Product_TypeID" Type="int" />
+    <Property Name="Product_Article" Type="float" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Image" Type="nvarchar" MaxLength="255" />
+    <Property Name="Product_min_price" Type="float" />
+    <Property Name="Razmer" Type="nvarchar" MaxLength="255" />
+    <Property Name="Weight_without_upakovka" Type="float" />
+    <Property Name="Weight_with_upakovka" Type="float" />
+    <Property Name="Edeniza_izm_id" Type="int" />
+    <Property Name="Aprovement_Certificate" Type="nvarchar" MaxLength="255" />
+    <Property Name="Standart_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="Date_of_made" Type="datetime" />
+    <Property Name="cost_price" Type="float" />
+    <Property Name="Zeh_number" Type="nvarchar" MaxLength="255" />
+    <Property Name="Kolichestvo_chelovek" Type="float" />
+    <Property Name="Materials_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Qualification_Status">
+    <Key>
+      <PropertyRef Name="Qualification_Status" />
+    </Key>
+    <Property Name="Qualification_Status" Type="int" Nullable="false" />
+    <Property Name="Status_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Request_status">
+    <Key>
+      <PropertyRef Name="Status_id" />
+    </Key>
+    <Property Name="Status_id" Type="int" Nullable="false" />
+    <Property Name="Status_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Sale_place">
+    <Key>
+      <PropertyRef Name="Place_id" />
+    </Key>
+    <Property Name="Place_id" Type="int" Nullable="false" />
+    <Property Name="Place_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Sotrudnik_qualification">
+    <Key>
+      <PropertyRef Name="Qualification_ID" />
+    </Key>
+    <Property Name="Qualification_ID" Type="int" Nullable="false" />
+    <Property Name="Sotrudnik_ID" Type="int" />
+    <Property Name="Equipment_ID" Type="int" />
+    <Property Name="Access_Level_Type_id" Type="int" />
+    <Property Name="Certificate_Number" Type="nvarchar" MaxLength="255" />
+    <Property Name="Issue_Date" Type="datetime" />
+    <Property Name="Expiry_Date" Type="datetime" />
+    <Property Name="Sotrudnik_Utverdil_id" Type="int" />
+    <Property Name="Status_ID" Type="int" />
+    <Property Name="Medical_Check_Date" Type="datetime" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Sotrudnik_roles">
+    <Key>
+      <PropertyRef Name="Role_Id" />
+    </Key>
+    <Property Name="Role_Id" Type="int" Nullable="false" />
+    <Property Name="Role_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Sotudniki">
+    <Key>
+      <PropertyRef Name="Sotrudnik_id" />
+    </Key>
+    <Property Name="Sotrudnik_id" Type="int" Nullable="false" />
+    <Property Name="Sotrudnik_Familiya" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sotrudnik_name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Sotrudnik_Otch" Type="nvarchar" MaxLength="255" />
+    <Property Name="Date_of_birth" Type="datetime" />
+    <Property Name="Sotrudnik_role_id" Type="int" />
+    <Property Name="Login" Type="nvarchar" MaxLength="255" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" />
+    <Property Name="Pasport" Type="float" />
+    <Property Name="Bank_card" Type="float" />
+    <Property Name="Family_status_Id" Type="int" />
+    <Property Name="Zdorovie_Id" Type="int" />
+    <Property Name="Gender_id" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Zdorovie">
+    <Key>
+      <PropertyRef Name="Zdorovie_Id" />
+    </Key>
+    <Property Name="Zdorovie_Id" Type="int" Nullable="false" />
+    <Property Name="Zdorovie_name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK_Access_log_Access_points">
+    <End Role="Access_points" Type="Self.Access_points" Multiplicity="0..1" />
+    <End Role="Access_log" Type="Self.Access_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Access_points">
+        <PropertyRef Name="Point_ID" />
+      </Principal>
+      <Dependent Role="Access_log">
+        <PropertyRef Name="Point_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Access_log_Access_results">
+    <End Role="Access_results" Type="Self.Access_results" Multiplicity="0..1" />
+    <End Role="Access_log" Type="Self.Access_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Access_results">
+        <PropertyRef Name="Result_id" />
+      </Principal>
+      <Dependent Role="Access_log">
+        <PropertyRef Name="Access_Result_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Access_log_Direction">
+    <End Role="Direction" Type="Self.Direction" Multiplicity="0..1" />
+    <End Role="Access_log" Type="Self.Access_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Direction">
+        <PropertyRef Name="Direction_id" />
+      </Principal>
+      <Dependent Role="Access_log">
+        <PropertyRef Name="Direction_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Access_log_Sotudniki">
+    <End Role="Sotudniki" Type="Self.Sotudniki" Multiplicity="0..1" />
+    <End Role="Access_log" Type="Self.Access_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotudniki">
+        <PropertyRef Name="Sotrudnik_id" />
+      </Principal>
+      <Dependent Role="Access_log">
+        <PropertyRef Name="Sotrudnik_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Access_points_Access_point_type">
+    <End Role="Access_point_type" Type="Self.Access_point_type" Multiplicity="0..1" />
+    <End Role="Access_points" Type="Self.Access_points" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Access_point_type">
+        <PropertyRef Name="Type_id" />
+      </Principal>
+      <Dependent Role="Access_points">
+        <PropertyRef Name="Point_Type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Equipment_Equipment_type">
+    <End Role="Equipment_type" Type="Self.Equipment_type" Multiplicity="0..1" />
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment_type">
+        <PropertyRef Name="Type_id" />
+      </Principal>
+      <Dependent Role="Equipment">
+        <PropertyRef Name="Equipment_Type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Materials_Edeniza_Izmerenia">
+    <End Role="Edeniza_Izmerenia" Type="Self.Edeniza_Izmerenia" Multiplicity="0..1" />
+    <End Role="Materials" Type="Self.Materials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Edeniza_Izmerenia">
+        <PropertyRef Name="Edeniza_id" />
+      </Principal>
+      <Dependent Role="Materials">
+        <PropertyRef Name="Edeniza_izmerenya_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Materials_Material_types">
+    <End Role="Material_types" Type="Self.Material_types" Multiplicity="0..1" />
+    <End Role="Materials" Type="Self.Materials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material_types">
+        <PropertyRef Name="Material_type_id" />
+      </Principal>
+      <Dependent Role="Materials">
+        <PropertyRef Name="Material_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Materials_Postavshik">
+    <End Role="Postavshik" Type="Self.Postavshik" Multiplicity="0..1" />
+    <End Role="Materials" Type="Self.Materials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Postavshik">
+        <PropertyRef Name="Postavshik_id" />
+      </Principal>
+      <Dependent Role="Materials">
+        <PropertyRef Name="Postavshik_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Partners_Oblast">
+    <End Role="Oblast" Type="Self.Oblast" Multiplicity="0..1" />
+    <End Role="Partners" Type="Self.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oblast">
+        <PropertyRef Name="Oblast_ID" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="Oblast_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Partners_Partner_type">
+    <End Role="Partner_type" Type="Self.Partner_type" Multiplicity="0..1" />
+    <End Role="Partners" Type="Self.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Partner_type">
+        <PropertyRef Name="Partner_Type_ID" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="Partner_Type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Partners_Sale_place">
+    <End Role="Sale_place" Type="Self.Sale_place" Multiplicity="0..1" />
+    <End Role="Partners" Type="Self.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale_place">
+        <PropertyRef Name="Place_id" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="Sale_place_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Postavshik_Postavshik_type">
+    <End Role="Postavshik_type" Type="Self.Postavshik_type" Multiplicity="0..1" />
+    <End Role="Postavshik" Type="Self.Postavshik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Postavshik_type">
+        <PropertyRef Name="Type_id" />
+      </Principal>
+      <Dependent Role="Postavshik">
+        <PropertyRef Name="Postavshik_type_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_request_Partners">
+    <End Role="Partners" Type="Self.Partners" Multiplicity="0..1" />
+    <End Role="Product_request" Type="Self.Product_request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Partners">
+        <PropertyRef Name="Partner_ID" />
+      </Principal>
+      <Dependent Role="Product_request">
+        <PropertyRef Name="Partner_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_request_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+    <End Role="Product_request" Type="Self.Product_request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Product_id" />
+      </Principal>
+      <Dependent Role="Product_request">
+        <PropertyRef Name="Product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_request_Request_status">
+    <End Role="Request_status" Type="Self.Request_status" Multiplicity="0..1" />
+    <End Role="Product_request" Type="Self.Product_request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Request_status">
+        <PropertyRef Name="Status_id" />
+      </Principal>
+      <Dependent Role="Product_request">
+        <PropertyRef Name="Request_status_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_request_Sotudniki">
+    <End Role="Sotudniki" Type="Self.Sotudniki" Multiplicity="0..1" />
+    <End Role="Product_request" Type="Self.Product_request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotudniki">
+        <PropertyRef Name="Sotrudnik_id" />
+      </Principal>
+      <Dependent Role="Product_request">
+        <PropertyRef Name="Sotrudnik_prinyal_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Edeniza_Izmerenia">
+    <End Role="Edeniza_Izmerenia" Type="Self.Edeniza_Izmerenia" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Edeniza_Izmerenia">
+        <PropertyRef Name="Edeniza_id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Edeniza_izm_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Materials">
+    <End Role="Materials" Type="Self.Materials" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materials">
+        <PropertyRef Name="Material_id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Materials_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Product_types">
+    <End Role="Product_types" Type="Self.Product_types" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product_types">
+        <PropertyRef Name="Produtc_Type_id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Product_TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotrudnik_qualification_Access_level_type">
+    <End Role="Access_level_type" Type="Self.Access_level_type" Multiplicity="0..1" />
+    <End Role="Sotrudnik_qualification" Type="Self.Sotrudnik_qualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Access_level_type">
+        <PropertyRef Name="Access_type_id" />
+      </Principal>
+      <Dependent Role="Sotrudnik_qualification">
+        <PropertyRef Name="Access_Level_Type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotrudnik_qualification_Equipment">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="0..1" />
+    <End Role="Sotrudnik_qualification" Type="Self.Sotrudnik_qualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="Equipment_ID" />
+      </Principal>
+      <Dependent Role="Sotrudnik_qualification">
+        <PropertyRef Name="Equipment_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotrudnik_qualification_Qualification_Status">
+    <End Role="Qualification_Status" Type="Self.Qualification_Status" Multiplicity="0..1" />
+    <End Role="Sotrudnik_qualification" Type="Self.Sotrudnik_qualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Qualification_Status">
+        <PropertyRef Name="Qualification_Status" />
+      </Principal>
+      <Dependent Role="Sotrudnik_qualification">
+        <PropertyRef Name="Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotrudnik_qualification_Sotudniki">
+    <End Role="Sotudniki" Type="Self.Sotudniki" Multiplicity="0..1" />
+    <End Role="Sotrudnik_qualification" Type="Self.Sotrudnik_qualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotudniki">
+        <PropertyRef Name="Sotrudnik_id" />
+      </Principal>
+      <Dependent Role="Sotrudnik_qualification">
+        <PropertyRef Name="Sotrudnik_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotrudnik_qualification_Sotudniki1">
+    <End Role="Sotudniki" Type="Self.Sotudniki" Multiplicity="0..1" />
+    <End Role="Sotrudnik_qualification" Type="Self.Sotrudnik_qualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotudniki">
+        <PropertyRef Name="Sotrudnik_id" />
+      </Principal>
+      <Dependent Role="Sotrudnik_qualification">
+        <PropertyRef Name="Sotrudnik_Utverdil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotudniki_Family_status">
+    <End Role="Family_status" Type="Self.Family_status" Multiplicity="0..1" />
+    <End Role="Sotudniki" Type="Self.Sotudniki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Family_status">
+        <PropertyRef Name="Status_Id" />
+      </Principal>
+      <Dependent Role="Sotudniki">
+        <PropertyRef Name="Family_status_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotudniki_Gender">
+    <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+    <End Role="Sotudniki" Type="Self.Sotudniki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="Gender_id" />
+      </Principal>
+      <Dependent Role="Sotudniki">
+        <PropertyRef Name="Gender_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotudniki_Sotrudnik_roles">
+    <End Role="Sotrudnik_roles" Type="Self.Sotrudnik_roles" Multiplicity="0..1" />
+    <End Role="Sotudniki" Type="Self.Sotudniki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrudnik_roles">
+        <PropertyRef Name="Role_Id" />
+      </Principal>
+      <Dependent Role="Sotudniki">
+        <PropertyRef Name="Sotrudnik_role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sotudniki_Zdorovie">
+    <End Role="Zdorovie" Type="Self.Zdorovie" Multiplicity="0..1" />
+    <End Role="Sotudniki" Type="Self.Sotudniki" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zdorovie">
+        <PropertyRef Name="Zdorovie_Id" />
+      </Principal>
+      <Dependent Role="Sotudniki">
+        <PropertyRef Name="Zdorovie_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище PODGOTOVKA_DEM_EKZAMEN_MDK_04_01ModelContainer">
+    <EntitySet Name="Access_level_type" EntityType="Self.Access_level_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Access_log" EntityType="Self.Access_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Access_point_type" EntityType="Self.Access_point_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Access_points" EntityType="Self.Access_points" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Access_results" EntityType="Self.Access_results" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Direction" EntityType="Self.Direction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Edeniza_Izmerenia" EntityType="Self.Edeniza_Izmerenia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Equipment" EntityType="Self.Equipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Equipment_type" EntityType="Self.Equipment_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Family_status" EntityType="Self.Family_status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gender" EntityType="Self.Gender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Material_types" EntityType="Self.Material_types" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Materials" EntityType="Self.Materials" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Oblast" EntityType="Self.Oblast" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Partner_type" EntityType="Self.Partner_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Partners" EntityType="Self.Partners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Postavshik" EntityType="Self.Postavshik" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Postavshik_type" EntityType="Self.Postavshik_type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product_request" EntityType="Self.Product_request" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product_types" EntityType="Self.Product_types" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Qualification_Status" EntityType="Self.Qualification_Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Request_status" EntityType="Self.Request_status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sale_place" EntityType="Self.Sale_place" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sotrudnik_qualification" EntityType="Self.Sotrudnik_qualification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sotrudnik_roles" EntityType="Self.Sotrudnik_roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sotudniki" EntityType="Self.Sotudniki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Zdorovie" EntityType="Self.Zdorovie" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Access_log_Access_points" Association="Self.FK_Access_log_Access_points">
+      <End Role="Access_points" EntitySet="Access_points" />
+      <End Role="Access_log" EntitySet="Access_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Access_log_Access_results" Association="Self.FK_Access_log_Access_results">
+      <End Role="Access_results" EntitySet="Access_results" />
+      <End Role="Access_log" EntitySet="Access_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Access_log_Direction" Association="Self.FK_Access_log_Direction">
+      <End Role="Direction" EntitySet="Direction" />
+      <End Role="Access_log" EntitySet="Access_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Access_log_Sotudniki" Association="Self.FK_Access_log_Sotudniki">
+      <End Role="Sotudniki" EntitySet="Sotudniki" />
+      <End Role="Access_log" EntitySet="Access_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Access_points_Access_point_type" Association="Self.FK_Access_points_Access_point_type">
+      <End Role="Access_point_type" EntitySet="Access_point_type" />
+      <End Role="Access_points" EntitySet="Access_points" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Equipment_Equipment_type" Association="Self.FK_Equipment_Equipment_type">
+      <End Role="Equipment_type" EntitySet="Equipment_type" />
+      <End Role="Equipment" EntitySet="Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Materials_Edeniza_Izmerenia" Association="Self.FK_Materials_Edeniza_Izmerenia">
+      <End Role="Edeniza_Izmerenia" EntitySet="Edeniza_Izmerenia" />
+      <End Role="Materials" EntitySet="Materials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Materials_Material_types" Association="Self.FK_Materials_Material_types">
+      <End Role="Material_types" EntitySet="Material_types" />
+      <End Role="Materials" EntitySet="Materials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Materials_Postavshik" Association="Self.FK_Materials_Postavshik">
+      <End Role="Postavshik" EntitySet="Postavshik" />
+      <End Role="Materials" EntitySet="Materials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Partners_Oblast" Association="Self.FK_Partners_Oblast">
+      <End Role="Oblast" EntitySet="Oblast" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Partners_Partner_type" Association="Self.FK_Partners_Partner_type">
+      <End Role="Partner_type" EntitySet="Partner_type" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Partners_Sale_place" Association="Self.FK_Partners_Sale_place">
+      <End Role="Sale_place" EntitySet="Sale_place" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Postavshik_Postavshik_type" Association="Self.FK_Postavshik_Postavshik_type">
+      <End Role="Postavshik_type" EntitySet="Postavshik_type" />
+      <End Role="Postavshik" EntitySet="Postavshik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_request_Partners" Association="Self.FK_Product_request_Partners">
+      <End Role="Partners" EntitySet="Partners" />
+      <End Role="Product_request" EntitySet="Product_request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_request_Products" Association="Self.FK_Product_request_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Product_request" EntitySet="Product_request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_request_Request_status" Association="Self.FK_Product_request_Request_status">
+      <End Role="Request_status" EntitySet="Request_status" />
+      <End Role="Product_request" EntitySet="Product_request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_request_Sotudniki" Association="Self.FK_Product_request_Sotudniki">
+      <End Role="Sotudniki" EntitySet="Sotudniki" />
+      <End Role="Product_request" EntitySet="Product_request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Edeniza_Izmerenia" Association="Self.FK_Products_Edeniza_Izmerenia">
+      <End Role="Edeniza_Izmerenia" EntitySet="Edeniza_Izmerenia" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Materials" Association="Self.FK_Products_Materials">
+      <End Role="Materials" EntitySet="Materials" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Product_types" Association="Self.FK_Products_Product_types">
+      <End Role="Product_types" EntitySet="Product_types" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotrudnik_qualification_Access_level_type" Association="Self.FK_Sotrudnik_qualification_Access_level_type">
+      <End Role="Access_level_type" EntitySet="Access_level_type" />
+      <End Role="Sotrudnik_qualification" EntitySet="Sotrudnik_qualification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotrudnik_qualification_Equipment" Association="Self.FK_Sotrudnik_qualification_Equipment">
+      <End Role="Equipment" EntitySet="Equipment" />
+      <End Role="Sotrudnik_qualification" EntitySet="Sotrudnik_qualification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotrudnik_qualification_Qualification_Status" Association="Self.FK_Sotrudnik_qualification_Qualification_Status">
+      <End Role="Qualification_Status" EntitySet="Qualification_Status" />
+      <End Role="Sotrudnik_qualification" EntitySet="Sotrudnik_qualification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotrudnik_qualification_Sotudniki" Association="Self.FK_Sotrudnik_qualification_Sotudniki">
+      <End Role="Sotudniki" EntitySet="Sotudniki" />
+      <End Role="Sotrudnik_qualification" EntitySet="Sotrudnik_qualification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotrudnik_qualification_Sotudniki1" Association="Self.FK_Sotrudnik_qualification_Sotudniki1">
+      <End Role="Sotudniki" EntitySet="Sotudniki" />
+      <End Role="Sotrudnik_qualification" EntitySet="Sotrudnik_qualification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotudniki_Family_status" Association="Self.FK_Sotudniki_Family_status">
+      <End Role="Family_status" EntitySet="Family_status" />
+      <End Role="Sotudniki" EntitySet="Sotudniki" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotudniki_Gender" Association="Self.FK_Sotudniki_Gender">
+      <End Role="Gender" EntitySet="Gender" />
+      <End Role="Sotudniki" EntitySet="Sotudniki" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotudniki_Sotrudnik_roles" Association="Self.FK_Sotudniki_Sotrudnik_roles">
+      <End Role="Sotrudnik_roles" EntitySet="Sotrudnik_roles" />
+      <End Role="Sotudniki" EntitySet="Sotudniki" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sotudniki_Zdorovie" Association="Self.FK_Sotudniki_Zdorovie">
+      <End Role="Zdorovie" EntitySet="Zdorovie" />
+      <End Role="Sotudniki" EntitySet="Sotudniki" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

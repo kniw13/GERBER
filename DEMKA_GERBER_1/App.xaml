@@ -1,0 +1,39 @@
+﻿<Application x:Class="DEMKA_GERBER_1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DEMKA_GERBER_1"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DropShadowEffect x:Key="CastShadow" BlurRadius="5" ShadowDepth="2" Opacity="0.2"/>
+
+        <!-- Стиль для кнопок -->
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Background" Value="#0C4882"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Bahnschrift"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontStretch" Value="SemiCondensed"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+
+        </Style>
+
+        <!-- Стиль для текстовых блоков -->
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Bahnschrift"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontStretch" Value="SemiCondensed"/>
+        </Style>
+
+        <!-- Стиль для надписей -->
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Bahnschrift"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="FontStretch" Value="SemiCondensed"/>
+        </Style>
+
+    </Application.Resources>
+</Application>
